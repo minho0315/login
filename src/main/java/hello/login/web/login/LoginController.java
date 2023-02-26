@@ -133,6 +133,7 @@ public class LoginController {
     /**
      * 로그인 이후 redirect 처리
      */
+    @PostMapping("/login")
     public String loginV4(
             @Valid @ModelAttribute LoginForm form, BindingResult bindingResult,
             @RequestParam(defaultValue = "/") String redirectURL,
